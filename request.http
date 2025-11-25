@@ -1,0 +1,7 @@
+### Test Audit Log Retrieval
+# POST http://localhost:4004/odata/v4/workflow/triggerSalesOrderWorkflow
+# Content-Type: application/json
+
+POST https://crossfunctional-dev-org-rakpoc-capbuild-srv.cfapps.eu10.hana.ondemand.com/odata/v4/sales-order/triggerSalesOrder
+Content-Type: application/json
+Authorization: Bearer <token>

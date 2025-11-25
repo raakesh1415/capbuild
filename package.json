@@ -1,0 +1,30 @@
+{
+  "name": "capbuild",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "dependencies": {
+    "@sap-cloud-sdk/connectivity": "^4.1.2",
+    "@sap-cloud-sdk/http-client": "^4.1.2",
+    "@sap/cds": "^9",
+    "@sap/xsenv": "^6.0.0",
+    "@sap/xssec": "^4.11.2",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": "^9"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "private": true,
+  "cds": {
+    "requires": {
+      "[production]": {
+        "auth": "xsuaa"
+      },
+      "connectivity": true,
+      "destinations": true
+    }
+  }
+}
