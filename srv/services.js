@@ -8,3 +8,12 @@ module.exports = (srv) => {
         return result;
     });
 };
+
+
+// const triggerSalesOrderWithParams = require('./libs/triggerSalesOrderWithParams');
+
+// module.exports = (srv) => {
+//     srv.on('triggerSalesOrder', async (req) => {
+//         return await triggerSalesOrderWithParams(req.data); // req.data contains parameters directly
+//     });
+// };
